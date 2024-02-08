@@ -27,7 +27,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr 2fr;
   grid-template-areas:
     "menu"
     "title"
@@ -219,10 +219,6 @@
     "menu menu"
     "title title"
     ". subtitle";
-  }
-
-  .header__subtitle {
-    align-self: start;
   }
 
   .gallery {
