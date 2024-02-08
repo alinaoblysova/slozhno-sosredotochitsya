@@ -27,7 +27,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: repeat(3, calc(100vh/3));
+  grid-template-rows: repeat(3, calc((100vh - var(--page-padding))/3));
   grid-template-areas:
     "menu"
     "title"
