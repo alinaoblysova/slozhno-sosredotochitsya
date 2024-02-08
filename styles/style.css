@@ -57,7 +57,7 @@
   border-inline-start: 1px solid var(--accent-color);
   border-block-end: 1px solid var(--accent-color);
   inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-block-end: var(--page-padding);
 }
 
 .decoration {
@@ -203,7 +203,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block: var(--page-padding);
+  padding-block: var(--page-padding);
   min-block-size: 100vh;
 }
 
