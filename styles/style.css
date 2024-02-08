@@ -221,6 +221,10 @@
     ". subtitle";
   }
 
+  .header__subtitle {
+    align-self: start;
+  }
+
   .gallery {
     grid-template-columns: repeat(3, auto);
   }
