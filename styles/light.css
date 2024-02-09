@@ -26,21 +26,4 @@
     --text-color: #353430;
     --cover-image: url(../images/cover-image-light.png);
   }
-  
-  .theme_auto .decoration {
-    display: none;
-  }
-  
-  .theme_auto .decorated-zone::before,
-  .theme_auto .decorated-zone::after,
-  .theme_auto .header__theme-menu-button_active,
-  .theme_auto .header__theme-menu-button:focus-visible {
-    border-color: var(--text-color);
-  }
-  
-  .theme_auto .header__theme-menu-button,
-  .theme_auto .title-decor,
-  .theme_auto .content-section__title {
-    color: var(--text-color);
-  }
 }
