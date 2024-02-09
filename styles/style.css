@@ -263,10 +263,6 @@
   .content-section:not(.content-section_columns) {
     grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
   }
-  
-  .content-section_columns .content-section__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
   .content-section_columns .content-section__title {
     inline-size: clamp(236px, calc(100% / 3.25), 315px);
@@ -282,5 +278,11 @@
 
   .two-row-image {
     grid-row: span 2;
+  }
+}
+
+@media (width >= 1024px) {
+  .content-section_columns .content-section__list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
