@@ -4,23 +4,6 @@
   переключая тему
 */
 
-.theme_light .decoration {
-  display: none;
-}
-
-.theme_light .decorated-zone::before,
-.theme_light .decorated-zone::after,
-.theme_light .header__theme-menu-button_active,
-.theme_light .header__theme-menu-button:focus-visible {
-  border-color: var(--text-color);
-}
-
-.theme_light .header__theme-menu-button,
-.theme_light .title-decor,
-.theme_light .content-section__title {
-  color: var(--text-color);
-}
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
