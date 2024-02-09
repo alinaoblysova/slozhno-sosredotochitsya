@@ -27,7 +27,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr auto 1fr;
   grid-template-areas:
     "menu"
     "title"
@@ -40,44 +40,44 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
+  inset-inline-end: 0;
+  inset-block-start: var(--page-padding);
   inline-size: 25px;
   block-size: 25px;
   border-inline-end: 1px solid var(--accent-color);
   border-block-start: 1px solid var(--accent-color);
-  inset-inline-end: 0;
-  inset-block-start: var(--page-padding);
 }
 
 
 .decorated-zone::after {
   content: "";
   position: absolute;
+  inset-inline-start: 0;
+  inset-block-end: var(--page-padding);
   inline-size: 25px;
   block-size: 25px;
   border-inline-start: 1px solid var(--accent-color);
   border-block-end: 1px solid var(--accent-color);
-  inset-inline-start: 0;
-  inset-block-end: var(--page-padding);
 }
 
 .decoration {
   position: absolute;
+  inset-inline-end: 28px;
+  inset-block-start: var(--page-padding);
   color: var(--accent-color);
   line-height: 25px;
-  inset-inline-end: 28px;
-  inset-block-start: 0;
 }
 
 .decoration::after {
   content: "";
   position: absolute;
+  inset-inline-end: -19px;
+  inset-block-start: 8px;
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color);
   background-color: var(--accent-color);
-  inset-inline-end: -19px;
-  inset-block-start: 8px;
 }
 
 .header__theme-menu {
@@ -93,7 +93,7 @@
 
 .header__theme-menu-button {
   border: none;
-  padding: 1.5px 13px;
+  padding: 1.5px 13px 5px;
   color: var(--accent-color);
   line-height: 18px;
   text-transform: lowercase;
@@ -219,6 +219,11 @@
     "menu menu"
     "title title"
     ". subtitle";
+  }
+
+  .header .header__title {
+    position: relative;
+    inset-inline-end: var(--page-padding);
   }
 
   .gallery {
