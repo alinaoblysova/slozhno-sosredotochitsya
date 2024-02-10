@@ -14,6 +14,9 @@
   --background-color: #fff1f7;
   --logo-color: #ffc2e6;
   --text-color: #353430;
+  --header-element-color: #353430;
+  --title-color: #353430;
+  --decoration-display: none;
   --cover-image: url(../images/cover-image-light.png);
 }
 
@@ -24,6 +27,9 @@
     --background-color: #fff1f7;
     --logo-color: #ffc2e6;
     --text-color: #353430;
+    --header-element-color: #353430;
+    --title-color: #353430;
+    --decoration-display: none;
     --cover-image: url(../images/cover-image-light.png);
   }
 }
