@@ -2,9 +2,6 @@
 
 .page {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: var(--page-gap);
   padding-inline: var(--page-padding);
   font-family: var(--main-font);
   font-size: 18px;
@@ -27,6 +24,7 @@
     "subtitle";
   align-items: center;
   block-size: 100vh;
+  margin-block-end: var(--page-gap);
   padding-block: var(--page-padding);
   min-block-size: 668px;
 }
@@ -203,6 +201,7 @@
   justify-content: center;
   align-items: center;
   block-size: 100vh;
+  margin-block-start: var(--page-gap);
   padding-block: var(--page-padding);
   min-block-size: 668px;
 }
